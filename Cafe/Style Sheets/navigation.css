@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #6f4e37;
+    padding: 30px;
+    font-size: 25px;
+    color: white;
+    align-items: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.title a {
+    text-decoration: none;
+    color: white;
+}
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 25px;
+    
+}
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+.bookatable button{
+    background-color: #e6d9c7;
+    border: #e6d9c7 solid 1px;
+    color: #6f4e37;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: backround-color 0.25s;
+}
+button:hover {
+    background-color: white;
+}

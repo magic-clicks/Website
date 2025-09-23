@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.about-us {
+    background-color: #f5f2eb ;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+    
+    
+
+}
+.humans {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-evenly;
+    background-color: #e6d9c7;
+    text-align: center;
+    text-wrap: wrap;
+    box-sizing: border-box;
+    gap: 50px;
+    
+    
+}
+.magic{
+    flex: 1;
+    padding: 25px;
+}
+.baker {
+    flex: 1;
+    padding: 25px;
+    
+    
+}
+.humans img {
+    
+    border-radius: 25px;
+    height: 300px;
+    width: auto;
+    
+}
+.cats {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-evenly;
+    background-color:#e6d9c7;
+    text-align: center;
+    box-sizing: border-box;
+    gap: 50px;
+    
+}
+.cats img {
+    border-radius: 25px;
+    height: 300px;
+    width: auto;
+    align-items: center;
+    
+
+}
+.ash {
+    flex: 1;
+    padding: 25px;
+}
+.eli {
+    flex: 1;
+    padding: 25px;
+}
+.ashandeli {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #3d3d3d;
+    color: white;
+    box-sizing: border-box;
+    gap: 50px;
+}
+.ashandeli img {
+    border-radius: 25px;
+    height: 400px;
+    width: auto;
+}
+#cuddles {
+    text-align: center;
+    background-color: #3d3d3d;
+    color: white;
+    padding: 10px;
+}
+.footer {
+    background-color:#6F4E37;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    color: white;
+}
