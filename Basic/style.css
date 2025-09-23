@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: Roboto;
+    padding: 25px;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: space-between;
+
+}
+
+.header-logo {
+    color: #F9FAF8;
+    display: flex;
+   
+}
+
+.links { 
+    
+    display: flex;
+    gap: 25px;
+    font-size: 18px;
+
+}
+.links a{
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+.one {
+    background-color: #1F2937;
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: space-between;
+    gap: 25px;
+}
+.one button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+
+}
+.button-one {
+    padding-top: 10px;
+}
+.one img {
+    display: flex;
+    padding-bottom: 100px;
+    width: 600px;
+    height: auto;
+}
+.about {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.disc {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.two-title {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.two {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-wrap: wrap;
+    gap: 25px;
+    
+}
+
+.three {
+    background-color: #E5E7EB;
+    padding: 200px;
+}
+.quote {
+     font-style: italic;
+     font-size: 36px;
+     color: #1F2937;
+}
+.author {
+    text-align: right;
+    font-size: 36px;
+    font-weight: 900;
+}
+.four {
+    background-color: #3882F6;
+    box-sizing: border-box;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    border-radius: 25px;
+    padding:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.call-to-action {
+    color: #F9FAF8;
+}
+.four button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid white 2px;
+    
+}
+.sign-up-button {
+
+}
+.footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
