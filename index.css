@@ -47,17 +47,3 @@ Gunatlet grey: #78736C
     height: auto;
     box-shadow: 6px 6px 6px #78736C ; 
 }
-.landingpages {
-    background-color: #C2B6AA;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 25px;
-    align-items: center;
-    gap: 50px;
-}
-.landingpages a {
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
-    
-}
