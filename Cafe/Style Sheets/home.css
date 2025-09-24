@@ -101,7 +101,7 @@
     flex: 1;
     font-size: 25px;
     line-height: 1.5;
-    text-align: start;
+    text-align: center;
 }
 .beans img{
     max-width: 100%;
@@ -122,7 +122,7 @@
     }
 }
 .food-box {
-    background-color: #e6d9c7;
+    background-color: #f5f2eb;
     font-size: 25px;
     text-align: center;
     padding: 50px;
@@ -153,6 +153,7 @@
     }
 }
 .atmosphere-box {
+    padding: 50px;
     background-color: #e6d9c7;
     text-align: center;
     font-size: 25px;
