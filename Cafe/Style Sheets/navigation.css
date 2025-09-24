@@ -13,6 +13,7 @@
     align-items: center;
     box-sizing: border-box;
     flex-wrap: wrap;
+    gap: 25px;
 }
 .title {
     display: flex;
