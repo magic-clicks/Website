@@ -82,6 +82,8 @@
     height: 200px;
     width: 280px;
     border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
 }
 .beans {
     display: flex;
@@ -144,6 +146,8 @@
     width: 400px;
     max-width: 100%;
     border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
 }
 @media (max-width: 768px) {
     .food img{
