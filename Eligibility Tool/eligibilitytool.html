@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screening Tool</title>
+    <link rel="stylesheet" href="./eligibilitytool.css">
+</head>
+<body>
+    <div class="header">
+        <a href="../Eligibility Tool/eligibility.html">Home</a>
+    </div>
+    
+    <!-- Rememer to do lable, input, label, input-->
+     <!-- make sure "name" is same so you can't multi select for same question-->
+
+    <div class="toolContainer">
+        <div class="tool">
+            <div class="questions">
+                <form>
+                    <h3>Prescreening Questionnaire</h3>
+                    <br>
+                    <p>Are you a resident of the state?</p>
+                    <br>
+                    <label for="yesResident">Yes</label>
+                    <input type="radio" id="yesResident" name="residency" required>
+                    <label for="noResident">No</label>
+                    <input type="radio" id="noResident" name="residency">
+                    <br>
+                    <br>
+                    <p>Are you a US Citizen or Eligible Non-Citizen?</p>
+                    <br>
+                    <label for="yesCit">Yes</label>
+                    <input type="radio" id="yesCit" name="citizenship" required>
+                    <label for="noCit">No</label>
+                    <input type="radio" id="noCit" name="citizenship">
+                    <br>
+                    <br>
+                    <p>Are you the primary caretaker for a child under age 19 living in your home?</p>
+                    <br>
+                    <label for="yesCTM">Yes</label>
+                    <input type="radio" id="yesCTM" name="caretaker" required>
+                    <label for="noCTM">No</label>
+                    <input type="radio" id="noCTM" name="caretaker">
+                    <br>
+                    <br>
+                    <p>Are you under the age of 19?</p>
+                    <br>
+                    <label for="yesMinor">Yes</label>
+                    <input type="radio" id="yesMinor" name="minor" required>
+                    <label for="notMinor">No</label>
+                    <input type="radio" id="notMinor" name="minor">
+                    <br>
+                    <br>
+                    <p>Are you pregnant? </p>
+                    <br>
+                    <label for="yesPregnant">Yes</label>
+                    <input type="radio" id="yesPregnant" name="pregnant" required>
+                    <label for="notPregnant">No</label>
+                    <input type="radio" id="notPregnant" name="pregnant">
+                    <br>
+                    <br>
+                    <p>Have you been diagnosed with breast or cervical cancer? </p>
+                    <br>
+                    <label for="yesBCC">Yes</label>
+                    <input type="radio" id="yesBCC" name="BCC" required>
+                    <label for="notBCC">No</label>
+                    <input type="radio" id="notBCC" name="BCC">
+                    <br>
+                    <br>
+                    <p>Were you in Foster Care at the time of your 18th Birthday and between the ages of 18 to 26? </p>
+                    <br>
+                    <label for="yesFoster">Yes</label>
+                    <input type="radio" id="yesFoster" name="foster" required>
+                    <label for="notFoster">No</label>
+                    <input type="radio" id="notFoster" name="foster"> 
+                    <br>
+                    <br>
+                </form>
+            </div>
+            <div class="submit">
+                <button type="button" onclick="eligibility()" class="toolSubmit">Submit</button>
+            </div>
+            <br>
+            <div>
+                <p id="toolResult">Click "Submit" to get the results!</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="disclaimer">
+        <p>Disclaimer: This tool is provided for fun and informational purposes only. It is not officially endorsed, guaranteed to be accurate, or intended for commercial use. The creator assumes no responsibility or liability for any use of the tool or its results.</p>
+    </div>
+    <script src="./eligibility.js"></script>
+</body>
+</html>
