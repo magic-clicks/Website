@@ -30,26 +30,27 @@ Gunatlet grey: #78736C
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    gap: 50px;
+    gap: 25px;
 }
 .bodyimg {
-    flex: 1;
+    align-items: center;
     /* holding space */
 }
-.bodydescription {
-    align-items: center;
-    justify-content: center;
-    text-wrap: wrap;
-    gap: 50px;
-}
 .body img {
-    height: 400px;
-    width: auto;
+    height: auto;
+    width: 400px;
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
     border-radius: 25px;
-    box-shadow: 6px 6px 6px #78736C ; 
+    box-shadow: 6px 6px 6px #78736C;
+    align-items: center; 
+}
+.bodydescription {
+    flex: 1; /* This needs to be here to resize description but sit next to photo*/
+    align-items: center;
+    text-wrap: wrap;
+    gap: 50px;
 }
 .projects {
     display: flex;

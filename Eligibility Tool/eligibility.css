@@ -36,7 +36,6 @@
     width: 600px;
 }
 .eligibilityHeader {
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -47,7 +46,7 @@
     font-size: 30px;
 }
 .elibilityImage {
-    flex: 1;
+
 }
 .elibilityImage img {
     max-width: 100%;
@@ -57,13 +56,12 @@
     
 }
 .eligibilityLink {
-    flex: 1;
     background-color: #1e448a;
     max-width: 100%;
     height: auto;
     align-items: center;
     text-align: center;
-    
+    height: 50px;
 }
 .eligibilityLink a {
     display: flex;
