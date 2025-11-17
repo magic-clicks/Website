@@ -22,7 +22,6 @@
     padding: 25px;
 }
 .checkEligibility {
-    flex: 1 1 1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -37,9 +36,8 @@
     width: 600px;
 }
 .eligibilityHeader {
-    flex: 1 1 1;
+    flex: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 
@@ -49,7 +47,7 @@
     font-size: 30px;
 }
 .elibilityImage {
-    flex: 1 1 1;
+    flex: 1;
 }
 .elibilityImage img {
     max-width: 100%;
@@ -59,7 +57,7 @@
     
 }
 .eligibilityLink {
-    flex: 1 1 1;
+    flex: 1;
     background-color: #1e448a;
     max-width: 100%;
     height: auto;
@@ -70,11 +68,11 @@
 .eligibilityLink a {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
     color: white;
     text-decoration: none;
-    padding: 25px;
     
 }
 .eligibilityLink a:hover {
