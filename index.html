@@ -4,7 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./index.css">
+    <style>
+        /* 
+        Versatile grey: #C2B6AA
+        Gunatlet grey: #78736C
+        */
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        .homenav {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            background-color: #78736C;
+            padding: 25px;
+            border-bottom: solid black 1px;
+        }
+        .homenav a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+        .body {
+            background-color: #C2B6AA;
+            text-align: center;
+            padding: 25px;
+            font-size: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 25px;
+        }
+        .bodyimg {
+            align-items: center;
+            /* holding space */
+        }
+        .body img {
+            height: auto;
+            width: 400px;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+            box-shadow: 6px 6px 6px #78736C;
+            align-items: center; 
+        }
+        .bodydescription {
+            flex: 1; /* This needs to be here to resize description but sit next to photo*/
+            align-items: center;
+            text-wrap: wrap;
+            gap: 50px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 25px;
+            gap: 50px;
+            background-color:  #C2B6AA;
+
+        }
+        .projectOne /* Cat Cafe*/{
+            width: 250px;
+            height: 250px;
+            border-radius: 25px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+        .projectOne a{
+            text-decoration: none;
+            color: black;
+            text-align: center;
+        }
+        .projectOne img{
+            height: 250px;
+            width: 250px;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+        .projectOne img:hover {
+            transform: translateY(-5px);
+        }
+        .projectTwo /* Pre Screening Eligibility Tool*/{
+            width: 250px;
+            height: 250px;
+            border-radius: 25px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+        .projectTwo a{
+            text-decoration: none;
+            color: black;
+            text-align: center;
+        }
+        .projectTwo img{
+            height: 250px;
+            width: 250px;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+        .projectTwo img:hover {
+            transform: translateY(-5px);
+        }
+        .projectThree{
+            width: 250px;
+            height: 250px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .projectFour{
+            width: 250px;
+            height: 250px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <nav class="homenav">
@@ -25,7 +158,7 @@
             <a href="./Cafe/index.html" target="blank"><img src="./Cafe/Photos/Cat Cafe.png">Cat Cafe</a>
         </div>
         <div class="projectTwo">
-            <a href="./Eligibility Tool/eligibility.html" target="_blank"><img src="./Eligibility Tool/card photo.jpg">Eligibility Tool</a>
+            <a href="/Eligibility Tool/index.html" target="_blank"><img src="./Eligibility Tool/card photo.jpg">Eligibility Tool</a>
         </div>
         <div class="projectThree">
             <h1>Coming Soon!</h1>
@@ -35,6 +168,9 @@
         </div>
     </div>
 
-    <script src="./script.js"></script>
+<script>
+    let script = "hello world"
+    console.log(script);
+</script>
 </body>
 </html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Screening Eligibility Tool</title>
+    <style>
+        * {
+        padding: 0;
+        margin: 0;
+        font-family: tahoma;
+        box-sizing: border-box;
+
+        }
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            padding: 25px;
+            background-color: #1e448a;
+            color: white;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 25px;
+        }
+        .checkEligibility {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+            border: solid #ccc 1px;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px #ccc;
+            padding: 25px;
+            gap: 10px;
+            height: 600px;
+            width: 600px;
+        }
+        .eligibilityHeader {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+        .eligibilityHeader h2 {
+            color: #1e448a;
+            font-size: 30px;
+        }
+        .elibilityImage {
+
+        }
+        .elibilityImage img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            align-items: center;
+            
+        }
+        .eligibilityLink {
+            background-color: #1e448a;
+            max-width: 100%;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            height: 50px;
+        }
+        .eligibilityLink a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            color: white;
+            text-decoration: none;
+            
+        }
+        .eligibilityLink a:hover {
+            cursor: pointer;
+            background-color: #3d5c94;
+        }
+        .disclaimer {
+            text-align: center;
+            text-wrap: wrap;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Pre Screening Eligibility Tool</h1>  
+    </div>
+    
+    <div class="container">
+        <div class="checkEligibility">
+
+            <div class="eligibilityHeader">
+                <h2>Check Eligibility</h2>
+            </div>
+            <div class="elibilityImage">
+                <img src="./card photo.jpg" alt="photo">
+            </div>
+            <div class="eligibilityLink">
+                <a href="./eligibilitytool.html">Check to see if you may be eligible!</a>
+            </div>
+        </div>
+    </div>
+    <div class="disclaimer">
+        <p>Disclaimer: This tool is provided for fun and informational purposes only. It is not officially endorsed, guaranteed to be accurate, or intended for commercial use. The creator assumes no responsibility or liability for any use of the tool or its results.</p>
+    </div>
+    <script src="./eligibility.js"></script>
+</body>
+</html>

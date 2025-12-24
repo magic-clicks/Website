@@ -4,11 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Screening Tool</title>
-    <link rel="stylesheet" href="./eligibilitytool.css">
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        font-family: tahoma;
+        box-sizing: border-box;
+        }
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            padding: 25px;
+            background-color: #1e448a;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 34px;
+        }
+        .toolContainer {
+            display: flex;
+            flex-grow: wrap;
+            padding: 25px;
+            justify-content: center;
+        }
+        .tool {
+            padding: 25px;
+            height: auto;
+            width: 600px;
+            border: solid #ccc 1px;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px #ccc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tool h3 {
+            text-align: center;
+        }
+        .questions {
+            font-size: 20px;
+        }
+        .toolSubmit {
+            background-color: #1e448a;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            align-items: center;
+            font-size: 20px;
+        }
+        .disclaimer {
+            text-align: center;
+            text-wrap: wrap;
+            font-size: 15px;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
-        <a href="../Eligibility Tool/eligibility.html">Home</a>
+        <a href="/Eligibility Tool/index.html">Home</a>
     </div>
     
     <!-- Rememer to do lable, input, label, input-->
@@ -93,6 +150,56 @@
     <div class="disclaimer">
         <p>Disclaimer: This tool is provided for fun and informational purposes only. It is not officially endorsed, guaranteed to be accurate, or intended for commercial use. The creator assumes no responsibility or liability for any use of the tool or its results.</p>
     </div>
-    <script src="./eligibility.js"></script>
+    <script>
+        console.log("test");
+
+        const yesResident = document.getElementById("yesResident");
+        const noResident = document.getElementById("noResident");
+        const yesCit = document.getElementById("yesCit");
+        const noCit = document.getElementById("noCit");
+        const yesCTM = document.getElementById("yesCTM");
+        const noCTM = document.getElementById("noCTM");
+        const yesMinor = document.getElementById("yesMinor");
+        const notMinor = document.getElementById("notMinor");
+        const yesPregnant = document.getElementById("yesPregnant");
+        const notPregnant = document.getElementById("notPregnant");
+        const yesBCC = document.getElementById("yesBCC");
+        const notBCC = document.getElementById("notBCC");
+        const yesFoster = document.getElementById("yesFoster");
+        const notFoster = document.getElementById("notFoster");
+        const toolResult = document.getElementById("toolResult");
+
+
+        function eligibility(){
+
+        let eligible = true;
+
+        if (yesResident.checked) eligible = true;
+        if (yesCit.checked) eligible = true;
+        if (noCit.checked) eligible = false;
+        if (noResident.checked) eligible = false;
+
+        let population = true; 
+
+        if (noCTM.checked && notMinor.checked && notPregnant.checked && notBCC.checked && notFoster.checked) population = false;
+
+
+        if(eligible && population){
+            toolResult.textContent = "You are potentially eligible!";
+        }
+        else if(noResident.checked){
+            toolResult.textContent = "You are not eligible because you aren't a resident of the state";
+        }
+        else if(noCit.checked){
+            toolResult.textContent = "You are not eligible because you aren't a US Citizen or Eligible Non-Citizen";
+        }
+        else{
+            toolResult.textContent = "You are not within an eligible population";
+        }
+
+        }
+
+        // decided to use booleans here with operators
+    </script>
 </body>
 </html>
